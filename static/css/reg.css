@@ -1,0 +1,105 @@
+html {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.text{
+    margin-left: 15%;
+    margin-top: 40%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.tick{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.group{
+    margin-left: 7%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    color: rgba(240, 145, 32, 1);
+}
+
+.solo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.log{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgba(37, 61, 98, 1);
+}
+
+.input{
+    color:rgba(240, 145, 32, 1);
+}
+
+.sign{
+    background-color: rgba(240, 145, 32, 1);
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+
+    margin-left: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    cursor: pointer;
+}
+
+.first{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+
+    height: 30px;
+    width: 500px;
+
+    border-color: rgba(240, 145, 32, 1);
+
+}
+
+.first::placeholder {color: rgba(240, 145, 32, 1);}
+
+.first:focus {
+    color: rgb(160, 89, 2);
+    background-color: #fff;
+    border-color: rgba(240, 145, 32, 0.8);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(240, 145, 32, 0.2);
+  }
+
+
+  .n{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    margin-top: 1%;
+    color: rgb(255, 140, 0);
+  }
+
+.logo{
+    object-fit: cover;
+    object-position: center;
+    width: 20%;
+    height: 20%;
+
+    margin-left: 35%;
+    margin-top: 1px;
+}

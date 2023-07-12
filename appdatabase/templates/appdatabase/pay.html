@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <link rel = "stylesheet" href="{% static "css/pay.css" %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <img class="bg" src="{% static "img/bg1.png" %}">
+    <p class="text">Приветствую!</p>
+
+    <div class="right" style="width: 50%; float:left">
+        <img class="podlog" src="{% static "img/podlog.png" %}" style="margin-left: 40%">
+        <p class="price-left">150₽/месяц</p>
+        <p class="mini-price-left">Приватная подписка</p>
+        <p class="desc-price-left">Если тебе интересно узнать что-то новое из других ВУЗов, хочешь сохранить все рефераты, доклады, курсовые в одном месте, тогда выбирай подписку на наш сервис! </p>
+        <a href="regU"><button class="but-left">Регистрация</button></a>
+    </div>
+
+    <div class="left" style="width: 50%; float:right">
+        <img class="podlog" src="{% static "img/podlog.png" %}" style="margin-left: 10%">
+        <p class="price-right">2500₽/год</p>
+        <p class="mini-price-right">Лицензия</p>
+        <p class="desc-price-right">Регистрируй группу, чтобы у всех был доступ к готовым рефератам, лабам, билетам. Сохраняй всё для будущих курсов! </p>
+        <a href="regG"><button class="but-right">Регистрация</button></a>
+    </div>
+</body>
+</html>

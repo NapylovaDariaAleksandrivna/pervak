@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="{% static "css/ent.css" %}">
+    <title>Entrance</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left" style="width: 55%; float:left">
+                <p class="text">Приветствую!</p>
+                <img class="logo" src="{% static "img/freshmen.png" %}">
+            </div>
+        </div>
+        <div class="right" style="width: 45%; float:left">
+            <p class="log">Log-in</p>
+            <input class="ent" placeholder="  Enter you email" type="text" style="margin-top: 20%">
+            <p><input class="ent" placeholder="  Enter you password" type="text" style="margin-top: 5%"></p>
+            <a href="pay" style="text-decoration: none;"><p class="n">Ещё не зарегистрирован?</p></a>
+            <button class="sign" onclick="location.href='home' ">Войти</button>
+        </div>
+    </div>
+</body>
+
+</html>

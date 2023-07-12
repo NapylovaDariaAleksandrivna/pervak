@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/reg.css" %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left" style="width: 55%; float:left">
+            <p class="text">Приветствую!</p>
+            <img class="logo" src="{% static "img/freshmen.png" %}">
+        </div>
+        <div class="right" style="width: 45%; float:left">
+            <div style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 200px;"
+        >
+                <p class="log">Начнём</p> 
+                <a class="n" href="sign_in" style="text-decoration: none;">
+                    Уже зарегистрированы?
+                </a>
+            </div>
+            {% block content %}
+            <form class="strike" method="post">
+                {% csrf_token %}
+                
+                {{ form.name_user}}<br><br>
+                {{ form.name_group }}<br><br>
+                {{ form.mail}}<br><br>
+                {{ form.password}}<br><br>
+                {{ form.year}}<br><br>
+                {{ form.name_university}}<br><br>
+                {{ form.name_specialization}}<br>
+
+                
+                <a href="https://classinform.ru/okso-2016.html" target="_blank" style="font-size: 14px; text-decoration: none; color: #F09120;margin-top: 0%">Проверь специальность на сайте</a>
+                <br>
+                <button class="sign" type="submit">Регистрация</button>
+                <span>{{error}}</span>
+            </form>
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

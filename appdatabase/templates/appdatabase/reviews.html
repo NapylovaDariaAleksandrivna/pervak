@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang='ru'>
+<head>
+    <link rel="stylesheet" href="{% static "css/reviews.css" %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+</head>
+<body>
+    <body style="margin:0%">
+        <div class="maket">
+            <div class="main_bar">
+                <div class="saidbar">
+                    <div id="logo"><a><img src="{% static "img/svg/logomini.svg" %}"></a></div>
+                    <div class="var">
+                        <div id="clickr"></div>
+                        <img class="button1" src="{% static "img/svg/home2.svg" %}"  style="position:absolute; margin-left:-0px"> 
+                        <img class="button2" src="{% static "img/svg/home.svg" %}" style=" position:absolute">
+                    </div>
+                    <div class="var">
+                        <div id="clickr"></div>
+                        <img class="button1" src="{% static "img/svg/vklad2.svg" %}"  style="position:absolute; margin-left:-0p;"> 
+                        <img class="button2" src="{% static "img/svg/vklad.svg" %}" style=" position:absolute">
+                    </div>
+                   
+                    <div class="var">
+                        <div id="clickr1"></div>
+                        <img class="button1" src="{% static "img/svg/chat2.svg" %}"  style="position:absolute; margin-left:-0px"> 
+                    </div>
+                    <div class="var">
+                        <div id="clickr"></div>
+                        <img class="button1" src="{% static "img/svg/dkn2.svg" %}"  style="position:absolute; margin-left:-0px"> 
+                        <img class="button2" src="{% static "img/svg/dkn.svg" %}" style=" position:absolute">
+                    </div>
+                    <div class="var">
+                        <div id="clickr"></div>
+                        <img class="button1" src="{% static "img/svg/add2.svg" %}"  style="position:absolute; margin-left:-0px"> 
+                        <img class="button2" src="{% static "img/svg/add.svg" %}" style=" position:absolute">
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="center">
+            <p class="text">Смотри отзывы своего направления</p>
+            <a href="#openModal">
+                <img class="podl" src="{% static "img/Rect.png" %}">
+                <img class="plus" src="{% static "img/Comp.png" %}">
+                <p class="plus-text">Добавить отзыв</p>
+            </a>
+
+            <div id="openModal" class="modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title">Добавьте преподавателя и отзыв на него</h3>
+                      <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body">    
+                      <ul>
+                        <div class="enter">
+                            <input class="forma" placeholder="  Укажите преподавателя">
+                          <input class="forma" placeholder="  Ваш отзыв" style="margin-top: 5%;">
+                          <a href="#close" title="Close" class="close"><button class="add">Добавить</button></a>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="review">
+                <div class="vert">
+                    <div class="gor">
+                        <img class="icon-chel" src="{% static "img/icon-chel.png" %}">
+                        <p class="name-chel" style="margin-top: 2%; margin-left: 3%;">Аноним</p>
+                    </div>
+                    <p class="prepod">Преподаватель</p>
+                    <p class="text-review">Отзыв</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

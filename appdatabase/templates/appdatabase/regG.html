@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/reg.css" %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left" style="width: 55%; float:left">
+            <p class="text">Приветствую!</p>
+            <img class="logo" src="{% static "img/freshmen.png" %}">
+        </div>
+        <div class="right" style="width: 45%; float:left">
+            <div style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 200px;"
+        >
+                <p class="log">Начнём</p> 
+                <a class="n" href="sign_in" style="text-decoration: none;">
+                    Уже зарегистрированы?
+                </a>
+            </div>
+            <form class="strike" method="post">
+                <input class="first" placeholder="  Название группы" type="text" pattern="\s" style="margin-top: 1%">
+                <p><input class="first" placeholder="  Почта" type="text" style="margin-top: 1%"></p>
+                <p><input class="first" placeholder="  Пароль" type="text" style="margin-top: 1%"></p>
+                <p><input class="first" placeholder="  Введите пароль ещё раз" type="text" style="margin-top: 1%"></p>
+                <p><input class="first" placeholder="  Курс (1, 2, 3...)" type="text" style="margin-top: 1%"></p>
+                <p><input class="first" placeholder="  ВУЗ/СПО" type="text" style="margin-top: 1%"></p>
+                <p><input class="first" placeholder="  Специальность (в формате 09.03.02)" type="text" style="margin-top: 1%"></p>
+                <a href="https://classinform.ru/okso-2016.html" style="font-size: 14px; text-decoration: none; color: #F09120;margin-top: 0%">Проверь специальность на сайте</a>
+                <br>
+                <button class="sign" onclick="location.href='home' ">Регистрация</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

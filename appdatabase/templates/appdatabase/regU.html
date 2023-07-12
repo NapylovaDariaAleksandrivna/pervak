@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+            <form class="strike" method="post">
+                {% csrf_token %}
+                
+                {{ form.name_user}}<br><br>
+                {{ form.name_group }}<br><br>
+                {{ form.mail}}<br><br>
+                {{ form.password}}<br><br>
+                {{ form.year}}<br><br>
+                {{ form.name_university}}<br><br>
+                {{ form.name_specialization}}<br>
+
+                
+                <a href="https://classinform.ru/okso-2016.html" target="_blank" style="font-size: 14px; text-decoration: none; color: #F09120;margin-top: 0%">Проверь специальность на сайте</a>
+                <br>
+                <button class="sign" type="submit">Регистрация</button>
+                <span>{{error}}</span>
+            </form>
+            {% endblock %}
+</body>
+</html>
+
+

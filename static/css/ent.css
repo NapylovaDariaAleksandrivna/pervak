@@ -1,0 +1,101 @@
+html {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.first{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  margin-top: 30%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+
+.second{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  margin-left: 50%;
+  margin-top: 1%;
+}
+
+.log{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: rgba(37, 61, 98, 1);
+}
+
+.ent{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+
+  height: 40px;
+  width: 500px;
+
+  border-color: rgba(240, 145, 32, 1);
+}
+
+.ent::placeholder {color: rgba(240, 145, 32, 1);}
+
+.ent:focus {
+  color: rgb(160, 89, 2);
+  background-color: #fff;
+  border-color: rgba(240, 145, 32, 0.8);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(240, 145, 32, 0.2);
+}
+
+.sign{
+  background-color: rgba(240, 145, 32, 1);
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 15px;
+
+  margin-left: 30%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+
+  cursor: pointer;
+}
+
+.n{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 14px;
+  margin-top: 1%;
+  color: rgb(255, 140, 0);
+  text-decoration:none;
+}
+
+.logo{
+  object-fit: cover;
+  object-position: center;
+  width: 20%;
+  height: 20%;
+
+  margin-left: 35%;
+  margin-top: 1px;
+}
+
+.text{
+  margin-left: 15%;
+  margin-top: 35%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+}

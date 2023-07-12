@@ -1,0 +1,45 @@
+html {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.text{
+    margin-left: 15%;
+    margin-top: 40%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    object-fit: cover;
+    object-position: center;
+    width: 20%;
+    height: 20%;
+
+    margin-left: 35%;
+    margin-top: 1px;
+}
+
+button{
+    background-color: rgba(240, 145, 32, 1);
+    height: 50px;
+    width: 170px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 17px;
+
+    margin-left: 30%;
+    margin-bottom: 2%;
+
+    cursor: pointer;
+}

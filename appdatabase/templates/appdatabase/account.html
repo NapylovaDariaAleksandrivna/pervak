@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" >
+        <title>Личный кабинет</title>
+        <link rel="stylesheet" type = "text/css" href="{% static "css/acc.css" %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="link rel="preconnect href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body style="margin:0%">
+        <div class="maket">
+            <div class="main_bar">
+                <div class="saidbar">
+                    <a href=""><div id="logo"><img src="{% static "img/svg/logomini.svg" %}"></div></a>
+                    <a href="home"><div class="var">
+                        <div id="clickr" style="background: white;"></div>
+                        <img class="button1" src="{% static "img/svg/home2.svg" %}"  style="position:absolute; margin-left:-0px"> 
+                        <img class="button2" src="{% static "img/svg/home.svg" %}" style=" position:absolute; opacity:0">
+                    </div></a>
+                    <a href="file.html"><div class="var">
+                        <div id="clickr"></div>
+                        <img class="button1" src="{% static "img/svg/vklad2.svg" %}"  style="position:absolute; margin-left:-0px"> 
+                        <img class="button2" src="{% static "img/svg/vklad.svg" %}" style=" position:absolute">
+                    </div></a>
+                   
+                    <a href="account.html"><div class="var">
+                        <div id="clickr"></div>
+                        <img class="button1" src="{% static "img/svg/chat2.svg" %}"  style="position:absolute; margin-left:-0px"> 
+                        <img class="button2" src="{% static "img/svg/chat.svg" %}" style=" position:absolute">
+                    </div></a>
+                    <a href="account.html"><div class="var">
+                        <div id="clickr"></div>
+                        <img class="button1" src="{% static "img/svg/dkn2.svg" %}"  style="position:absolute; margin-left:-0px"> 
+                        <img class="button2" src="{% static "img/svg/dkn.svg" %}" style=" position:absolute">
+                    </div></a>
+                    <a href="invi.html"><div class="var">
+                        <div id="clickr"></div>
+                        <img class="button1" src="{% static "img/svg/add2.svg" %}"  style="position:absolute; margin-left:-0px"> 
+                        <img class="button2" src="{% static "img/svg/add.svg" %}" style=" position:absolute">
+                    </div></a>
+                </div>
+            </div>
+            <div class="center">
+               
+            </div>
+            <div>
+                <div class="maybeinfo" >
+                    <div id="fon">
+                        <p class="txt"><strong style="color:#000;"><em>Добро пожаловать!</em></strong> <br><br>Наш сервис предоставляет возможность студентам любого ВУЗ/СПО сохранять билеты, рефераты, доклады, лабы, практики. Ты так же можешь оставить отзыв о преподавателе, чтобы помочь студентам найти подход к нему.
+                            <br><br>Если у тебя возникли вопросы, пиши нам на <a href="mailto:perva4ki@gmail.com" style="text-decoration: none; color:#000">почту</a> или <a href="https://t.me/dariadnf" style="text-decoration: none; color:#000">телеграм</a>, мы всегда рады обратной связи!</p>
+                        <img src="{% static "img/svg/znaniaim.svg" %}" class="znania">
+                    </div>
+                </div>
+                <div class="folders">
+                    <div class="folder">
+                        <img src="{% static "img/svg/privat1.svg" %}" class="folder">
+                        <p class="nameclass">Приват 1</p>
+                    </div>
+                    <div class="folder">
+                        <img src="{% static "img/svg/privat2.svg" %}" class="folder">
+                        <p class="nameclass">Приват 2</p>
+                    </div>
+                    <div class="folder">
+                        <img src="{% static "img/svg/privat3.svg" %}" class="folder">
+                        <p class="nameclass">Приват 3</p>
+                    </div>
+                    <div class="folder">
+                        <img src="{% static "img/svg/addfolder.svg" %}" class="folder" style="margin: 0%;">
+                        <p class="nameclass"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                {% block content %}
+                <div class="info">
+                    <div class="person">
+                        <img src="{% static "img/svg/avatar.svg" %}" style="width: 70px;height: 70px;">
+                        <div class="n_s">
+                            <p class="name">Name</p>
+                            <p class="status">Status: </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="des">ВУЗ/СПО: </p>
+                        <p class="des">Факультет: </p>
+                        <p class="des">Направление: </p>
+                        <p class="des" style="margin-bottom: 40px;">Курс: </p>
+                        <a class="exit" href="../" style="text-decoration: none">Выйти из личного кабинета</a>
+                        <hr class="hr">
+                    </div>
+                    <img src="{% static "img/svg/logo.svg" %}" style="margin-top: 90px;width: 234px; height: 207px; cursor:pointer">
+                    <p class="help">Если есть ошибка в данных напишите нам на почту: <a href="mailto:perva4ki@gmail.com" class="help1">perva4ki@gmail.com</a> - или телеграм: <a href="https://t.me/dariadnf" style="text-decoration: none; color:#fff; font-style:italic">dariadnf</a></p>
+                </div>
+                {% endblock %}
+            </div>
+        </div>  
+    </body>
+</html>

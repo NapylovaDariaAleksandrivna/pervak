@@ -1,0 +1,65 @@
+.maket{
+    display: flex;
+ 
+}
+
+.main_bar{
+    width: 146px;
+    height: 100%;
+    background-color: #253D62;
+}
+
+.saidbar{
+    margin-left: 20px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 60px;
+}
+
+.center{
+    width: 110px;
+    height: 100%;
+    margin-left: -60px;
+    border-radius: 67px;
+    background-color: white;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.var{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+
+#clickr{
+    position: relative;
+    z-index: 0;
+    background-color: #253D62;
+    height: 60px;
+    width: 76px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: -10px;
+    transition: 0.15s;
+}
+
+.button1, .button2{
+    margin-top: -55px;
+    padding-top: 3px;
+    padding-left: 6px;
+
+}
+
+.var:hover #clickr{
+    background-color: white;
+    width: 77px;
+}
+.var:hover .button2{
+    opacity: 0%;
+}

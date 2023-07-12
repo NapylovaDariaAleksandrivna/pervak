@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang='ru'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="{% static "css/first.css" %}">
+    <title>Main</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left" style="width: 55%; float:left">
+                <p class="text">Приветствую!</p>
+                <img class="logo" src="{% static "img/freshmen.png" %}">
+            </div>
+        </div>
+        <div class="right" style="width: 45%; float:left">
+            <a href="sign_in"><button class="but" style="margin-top: 30%;">Войти</button></a>
+            <a href="pay"><p><button class="but" style="margin-top: 10%;">Регистрация</button></p></a>
+        </div>
+    </div>
+</body>
+
+</html>

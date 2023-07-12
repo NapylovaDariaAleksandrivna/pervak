@@ -1,0 +1,388 @@
+.maket{
+    display: flex;
+    column-gap: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.main_bar{
+    width: 100px;
+    height: 1000px;
+    background-color: #253D62;
+}
+
+.saidbar{
+    margin-left: 20px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 60px;
+}
+
+
+
+#logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.var{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+
+
+.button1, .button2{
+    margin-top: -55px;
+    padding-top: 3px;
+    padding-left: 6px;
+
+}
+
+.var:hover #clickr{
+    background-color: white;
+    width: 77px;
+}
+.var:hover .button2{
+    opacity: 0%;
+}
+
+.maket{
+    display: flex;
+    column-gap: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.main_bar{
+    width: 319px;
+    height: 1000px;
+    background-color: #253D62;
+}
+
+.saidbar{
+    margin-left: 20px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 60px;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.var{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+
+#clickr{
+    position: relative;
+    z-index: 0;
+    background-color: #253D62;
+    height: 60px;
+    width: 76px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: -10px;
+    transition: 0.15s;
+}
+
+#clickr1{
+    position: relative;
+    z-index: 0;
+    background-color: #ffffff;
+    height: 60px;
+    width: 76px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: -10px;
+    transition: 0.15s;
+}
+
+.button1, .button2{
+    margin-top: -55px;
+    padding-top: 3px;
+    padding-left: 6px;
+
+}
+
+.var:hover #clickr{
+    background-color: white;
+    width: 77px;
+}
+.var:hover .button2{
+    opacity: 0%;
+}
+
+.center{
+    position: absolute;
+    width: 94%;
+    height: 170%;
+    border-radius: 67px;
+    background-color: rgb(255, 255, 255);
+
+    margin-top: -79%;
+    margin-left: 6%;
+}
+
+.text{
+    margin-left: 10%;
+    margin-top: 5%;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* фон */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* отображение окна по центру */
+  }
+}
+/* Стили для блока с контентом окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* Стили заголовка окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+.podl{
+    position: relative;
+
+    height: 6%;
+    width: 70%;
+    
+    margin-left: 10%;
+}
+
+.plus{
+    position: absolute;
+
+    object-fit: contain;
+    object-position: center;
+
+    height: 4%;
+    width: 4%;
+
+    margin-left: -69%;
+    margin-top: 0.7%;
+}
+
+.plus-text{
+    position: absolute;
+    margin-top: -3.9%;
+    margin-left: 18%;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.modal-title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+.enter{
+    display: flex;
+    flex-direction: column;
+}
+
+.forma{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+
+    height: 30px;
+    width: 100%;
+
+    margin-left: -8%;
+
+    border-color: rgba(240, 145, 32, 1);
+}
+
+.forma::placeholder {color: rgba(240, 145, 32, 1);}
+
+.forma:focus {
+    color: rgb(160, 89, 2);
+    background-color: #fff;
+    border-color: rgba(240, 145, 32, 0.8);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(240, 145, 32, 0.2);
+  }
+
+.add{
+    margin-top: 7%;
+    margin-left: 30%;
+
+    width: 30%;
+    height: 30px;
+
+    background-color: rgba(240, 145, 32, 1);
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.review{
+    background-color: rgba(114, 133, 131, 0.37);
+    
+    margin-left: 10%;
+    margin-top: 10%;
+
+    height: 18%;
+    width: 70%;
+
+    border-radius: 10px;
+}
+
+.gor{
+    display: flex;
+    flex-direction: row;
+}
+
+.vert{
+    margin-left: 1%;
+}
+
+.icon-chel{
+    object-fit: cover;
+    object-position: center;
+
+    width: 5%;
+    height: 5%;
+
+    margin-top: 1%;
+}
+
+.name-chel{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.prepod{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.text-review{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 17px;
+}
